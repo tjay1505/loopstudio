@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>JK | Loopstudios landing page</title>
+
+  <link rel="stylesheet" href="./sass/index.css">
+</head>
+<body>
+   <div id="header">
+
+    <div id="h-bar">
+      <img src="./images/logo.svg" style="cursor: pointer;" alt="logo">
+      <img src="./images/icon-hamburger.svg" alt="menu" onclick="disableScroll()" id="buger">
+    </div>
+
+    <div id="h-h1">
+      <h1>
+        IMMERSIVE EXPERINCES THAT DELIVER
+      </h1>
+    </div>
+    
+  </div> 
+
+  <div id="sec-a">
+    <img id="img-in" src="./images/mobile/image-interactive.jpg" alt="">
+
+    <h1>
+      THE LEADER IN INTERACTIVE VR
+    </h1>
+
+    <P>Founded in 2011, Loopstudios has been producing world-class virtual reality 
+      projects for some of the best companies around the globe. Our award-winning 
+      creations have transformed businesses through digital experiences that bind 
+      to their brand.</P>
+  </div> 
+  <div id="sec-b">
+    <h1>
+      OUR CREATIONS
+    </h1>
+    <div id="img-box">
+      
+    </div>
+    <button id="btn" >SEE ALL</button>
+  </div> 
+
+  <div id="footer">
+    <img src="./images/logo.svg" alt="">
+    <ul>
+      <li>About</li>
+      <li>Career</li>
+      <li>Products</li>
+      <li>Events</li>
+      <li>Support</li>
+    </ul>
+    <div id="f-imgbox">
+      <img src="./images/icon-facebook.svg" alt="">
+      <img src="./images/icon-instagram.svg" alt="">
+      <img src="./images/icon-pinterest.svg" alt="">
+      <img src="./images/icon-twitter.svg" alt="">
+    </div>
+    <p>© 2023 jaikumar | Loopstudios. All rights reserved.</p>
+  </div>
+
+  <div id="menubox">
+
+    <div class="menuhead">
+      <img src="./images/logo.svg" alt="">
+      <img src="./images/icon-close.svg" style="cursor: pointer;" onclick="enableScroll()" alt="">
+    </div>
+
+    <ul>
+      <a href="#f-imgbox" onclick="enableScroll()"> SUPPORT</a>
+      <a href="#img-in" onclick="enableScroll()">CAREERS</a>
+      <a href="#sec-c " onclick="enableScroll()">ABOUT</a>
+      <a href="#btn" onclick="enableScroll()">EVENTS</a>
+      <a href="#sec-b" onclick="enableScroll()">PRODUCTS</a>
+    </ul>
+  </div>
+
+  <script>
+    const y = document.getElementById('menubox')
+
+    let images = ['./images/mobile/image-curiosity.jpg','./images/mobile/image-deep-earth.jpg','./images/mobile/image-fisheye.jpg','./images/mobile/image-from-above.jpg','./images/mobile/image-grid.jpg','./images/mobile/image-night-arcade.jpg','./images/mobile/image-pocket-borealis.jpg']
+    const x = document.getElementById('img-box')
+    images.map((image) => {
+      const newb = document.createElement('img')
+      newb.setAttribute('src',image)
+      newb.classList.add('imgst')
+      x.appendChild(newb)
+    })
+
+    function disableScroll() {
+            y.style.display = 'block'
+            scrollTop =
+            window.pageYOffset || document.documentElement.scrollTop;
+            scrollLeft =
+            window.pageXOffset || document.documentElement.scrollLeft,
+          
+                window.onscroll = function() {
+                    window.scrollTo(scrollLeft, scrollTop);
+                };
+        }
+          
+        function enableScroll() {
+          y.style.display = 'none'
+          console.log('jty');
+            window.onscroll = function() {};
+        }
+  </script>
+</body>
+</html>

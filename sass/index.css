@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+* {
+  padding: 0%;
+  margin: 0;
+}
+
+#menubox ul, #menubox .menuhead, #footer #f-imgbox, #footer, #sec-b #img-box, #sec-b, #sec-a, #header #h-h1, #header #h-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header {
+  height: 100vh;
+  background: url(../images/mobile/image-hero.jpg);
+  background-size: cover;
+}
+#header #h-bar {
+  justify-content: space-between;
+  padding: 5%;
+}
+#header #h-h1 {
+  color: white;
+  border: 1px solid white;
+  height: 50%;
+  margin: 15% 5%;
+  font-size: 6.5vmin;
+  text-align: left;
+}
+#header #h-h1 h1 {
+  width: 95%;
+  height: 75%;
+  font-weight: 100;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#sec-a {
+  margin-top: 15%;
+  flex-direction: column;
+}
+#sec-a img {
+  width: 90%;
+}
+#sec-a h1 {
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 10%;
+  font-weight: 100;
+  width: 80%;
+  text-align: center;
+  font-size: 9vmin;
+}
+#sec-a p {
+  margin-top: 7%;
+  font-family: "Alata", sans-serif;
+  color: gray;
+  text-align: center;
+  font-size: 5vmin;
+  width: 80%;
+}
+
+#sec-b {
+  flex-direction: column;
+}
+#sec-b h1 {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 10% 0;
+  font-weight: 100;
+  width: 80%;
+  text-align: center;
+  font-size: 9vmin;
+}
+#sec-b #img-box {
+  flex-direction: column;
+}
+#sec-b .imgst {
+  width: 90%;
+  transition: 0.1s;
+  margin: 5% 0;
+}
+#sec-b img:hover {
+  box-shadow: 1px 1px 17px 5px rgb(104, 146, 209);
+}
+#sec-b button {
+  width: 50%;
+  font-family: "Alata", sans-serif;
+  font-weight: 700;
+  font-size: 5vmin;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 4% 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+#sec-b button:hover {
+  color: white;
+  border: 1px solid white;
+  background-color: #000000;
+}
+
+#footer {
+  height: auto;
+  margin-top: 10%;
+  background-color: #000000;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  flex-direction: column;
+}
+#footer img {
+  margin-top: 15%;
+}
+#footer ul {
+  margin-top: 0%;
+  width: 100%;
+  text-align: center;
+}
+#footer ul li {
+  font-size: 5vmin;
+  list-style: none;
+  margin-top: 10%;
+}
+#footer ul li:hover {
+  color: rgb(0, 255, 13);
+  text-shadow: 1px 2px rgb(255, 0, 0);
+}
+#footer #f-imgbox {
+  margin-top: 10%;
+  width: 50%;
+  justify-content: space-around;
+}
+#footer p {
+  margin: 5% 0;
+  color: gray;
+}
+
+#menubox {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  z-index: 1;
+  height: 100vh;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8784313725);
+}
+#menubox .menuhead {
+  justify-content: space-between;
+  padding: 6%;
+}
+#menubox ul {
+  flex-direction: column;
+  text-align: left;
+  height: 70%;
+  padding-left: 5%;
+}
+#menubox ul a {
+  text-decoration: none;
+  width: 100%;
+  list-style: none;
+  color: white;
+  margin-top: 5%;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: xx-large;
+}
+#menubox ul a:hover {
+  color: rgb(255, 0, 0);
+  text-shadow: 1px 2px rgb(255, 251, 0);
+}/*# sourceMappingURL=index.css.map */
