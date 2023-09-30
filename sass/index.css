@@ -118,8 +118,8 @@
   margin-top: 10%;
 }
 #footer ul li:hover {
-  color: rgb(0, 255, 13);
-  text-shadow: 1px 2px rgb(255, 0, 0);
+  color: rgb(253, 0, 211);
+  text-shadow: 1px 2px rgb(255, 255, 255);
 }
 #footer #f-imgbox {
   margin-top: 10%;
@@ -160,8 +160,8 @@
   font-size: xx-large;
 }
 #menubox ul a:hover {
-  color: rgb(255, 0, 0);
-  text-shadow: 1px 2px rgb(255, 251, 0);
+  color: rgb(253, 0, 211);
+  text-shadow: 1px 2px rgb(255, 255, 255);
 }
 
 #gallerys {
