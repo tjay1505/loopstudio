@@ -11,7 +11,8 @@
   <link rel="stylesheet" href="./sass/index.css">
 </head>
 <body>
-   <div id="header">
+  
+    <div id="header"> 
 
     <div id="h-bar">
       <img src="./images/logo.svg" style="cursor: pointer;" alt="logo">
@@ -42,12 +43,14 @@
     <h1>
       OUR CREATIONS
     </h1>
+    
     <div id="img-box">
       
-    </div>
-    <button id="btn" >SEE ALL</button>
+    </div> 
+    <button id="btn" onclick="openh()" >SEE ALL</button>
   </div> 
 
+  
   <div id="footer">
     <img src="./images/logo.svg" alt="">
     <ul>
@@ -81,19 +84,38 @@
       <a href="#sec-b" onclick="enableScroll()">PRODUCTS</a>
     </ul>
   </div>
+  
 
+  <div id="gallerys">
+    <div class="g-head">
+      <img src="./images/icon-close.svg" onclick="closeh()" alt="">
+    </div>
+    <div id="gallery">
+
+    </div>
+  </div>
   <script>
-    const y = document.getElementById('menubox')
+     let desk = ["./images/desktop/image-curiosity.jpg","./images/desktop/image-deep-earth.jpg",'./images/desktop/image-fisheye.jpg','./images/desktop/image-from-above.jpg','./images/desktop/image-grid.jpg','./images/desktop/image-night-arcade.jpg','./images/desktop/image-pocket-borealis.jpg','./images/desktop/image-soccer-team.jpg']
+    const z = document.getElementById('gallery')
 
-    let images = ['./images/mobile/image-curiosity.jpg','./images/mobile/image-deep-earth.jpg','./images/mobile/image-fisheye.jpg','./images/mobile/image-from-above.jpg','./images/mobile/image-grid.jpg','./images/mobile/image-night-arcade.jpg','./images/mobile/image-pocket-borealis.jpg']
-    const x = document.getElementById('img-box')
-    images.map((image) => {
-      const newb = document.createElement('img')
-      newb.setAttribute('src',image)
-      newb.classList.add('imgst')
-      x.appendChild(newb)
+    desk.map((dek) => {
+      const zx = document.createElement('img')
+      zx.setAttribute('src',dek)
+      z.appendChild(zx)
     })
 
+    let images = ['./images/mobile/image-curiosity.jpg','./images/mobile/image-deep-earth.jpg','./images/mobile/image-fisheye.jpg','./images/mobile/image-from-above.jpg','./images/mobile/image-grid.jpg','./images/mobile/image-night-arcade.jpg','./images/mobile/image-pocket-borealis.jpg']
+
+    const y = document.getElementById('menubox')
+    const yx = document.getElementById('img-box')
+    images.map((image) => {
+       const newb = document.createElement('img')
+       newb.setAttribute('src',image)
+       newb.classList.add('imgst')
+       yx.appendChild(newb)
+    })
+
+    
     function disableScroll() {
             y.style.display = 'block'
             scrollTop =
@@ -105,8 +127,29 @@
                     window.scrollTo(scrollLeft, scrollTop);
                 };
         }
+    function openh(){
+      const galleys = document.getElementById('gallerys')
+
+      galleys.style.display = 'block'
+      console.log('openh');
+            scrollTop =
+            window.pageYOffset || document.documentElement.scrollTop;
+            scrollLeft =
+            window.pageXOffset || document.documentElement.scrollLeft,
           
+                window.onscroll = function() {
+                    //window.scrollTo(scrollLeft);
+                };
+    }
+    function closeh(){
+      const galleys = document.getElementById('gallerys')
+
+      galleys.style.display = 'none'
+      window.onscroll = function() {};
+        
+    }
         function enableScroll() {
+
           y.style.display = 'none'
           console.log('jty');
             window.onscroll = function() {};

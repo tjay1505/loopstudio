@@ -162,4 +162,40 @@
 #menubox ul a:hover {
   color: rgb(255, 0, 0);
   text-shadow: 1px 2px rgb(255, 251, 0);
+}
+
+#gallerys {
+  height: 100vh;
+  background-color: rgba(34, 29, 29, 0.9058823529);
+  position: fixed;
+  top: 0;
+  display: none;
+}
+#gallerys .g-head {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+#gallerys .g-head img {
+  width: 8vmin;
+  height: 8vmin;
+  margin-right: 5%;
+}
+
+#gallery {
+  display: flex;
+  width: 100vw;
+  height: 90%;
+  scrollbar-width: none;
+  align-items: center;
+  overflow: scroll;
+}
+#gallery img {
+  height: 80%;
+  margin-right: 5%;
+}
+
+#gallery::-webkit-scrollbar {
+  display: none;
 }/*# sourceMappingURL=index.css.map */

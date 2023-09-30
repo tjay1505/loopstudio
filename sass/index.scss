@@ -181,3 +181,40 @@ $f2:'Josefin Sans', sans-serif;
         }
     }
 }
+//garllery img
+#gallerys{
+    height: 100vh;
+    background-color: #221d1de7;
+    position: fixed;
+    top: 0;
+    display: none;
+    .g-head{
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+
+        img{
+            width: 8vmin;
+            height: 8vmin;
+            margin-right: 5%;
+        }
+    }
+}
+#gallery{
+    display: flex;
+    width: 100vw;
+    height: 90%;
+    scrollbar-width: none;
+    //padding-left: 5%;
+    img{
+        height: 80%;
+        margin-right: 5%;
+        
+    }
+    align-items: center;
+    overflow: scroll;
+}
+#gallery::-webkit-scrollbar {
+   display: none;
+}
