@@ -86,6 +86,8 @@
   font-weight: 700;
   font-size: 5vmin;
   border: 1px solid rgb(0, 0, 0);
+  transition: 1s;
+  animation: btnani infinite 1.8s linear;
   padding: 4% 0;
   cursor: pointer;
   background-color: transparent;
@@ -96,6 +98,14 @@
   background-color: #000000;
 }
 
+@keyframes btnani {
+  from {
+    color: black;
+  }
+  to {
+    color: white;
+  }
+}
 #footer {
   height: auto;
   margin-top: 10%;

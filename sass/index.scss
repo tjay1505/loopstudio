@@ -96,7 +96,8 @@ $f2:'Josefin Sans', sans-serif;
         font-weight: 700;
         font-size: 5vmin;
         border: 1px solid rgb(0, 0, 0);
-
+        transition: 1s;
+        animation: btnani infinite 1.8s linear;
         padding: 4% 0;
         cursor: pointer;
         background-color: transparent;
@@ -105,6 +106,14 @@ $f2:'Josefin Sans', sans-serif;
         color: white;
         border: 1px solid white;
         background-color: #000000;
+    }
+}
+@keyframes btnani{
+    from{
+        color: black;
+    }
+    to{
+        color: white;
     }
 }
 //footer
